@@ -6,11 +6,11 @@
   "module": "src/index.js",
   "main": "cjs/src/index.js",
   "exports": {
-    "types": "./types/index.d.ts",
-    "bun": "./src/index.js",
-    "workerd": "./cf/src/index.js",
-    "import": "./src/index.js",
-    "default": "./cjs/src/index.js"
+    ".": {
+      "import": "./src/index.js",
+      "require": "./cjs/src/index.js"
+    },
+    "./cf": "./cf/src/index.js"
   },
   "types": "types/index.d.ts",
   "typings": "types/index.d.ts",
